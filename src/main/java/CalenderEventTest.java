@@ -24,8 +24,8 @@ public class CalenderEventTest {
         };
         Calendar service =null;
 
-        event.setSummary("Home event");
-        event.setLocation("18-167, Anand Nagar, Hanumnapet, Malkajgiri");
+        event.setSummary("Event summary");
+        event.setLocation("Your Location");
         event.setDescription("Desired description");
         Event.Reminders reminders = new Event.Reminders()
                 .setUseDefault(false)
@@ -33,7 +33,7 @@ public class CalenderEventTest {
         event.setReminders(reminders);
 
         ArrayList<EventAttendee> attendees = new ArrayList<EventAttendee>();
-        attendees.add(new EventAttendee().setEmail("tribhuvan.work@gmail.com"));
+        attendees.add(new EventAttendee().setEmail("Attendeee mail ID"));
         // ...
         event.setAttendees(attendees);
 
